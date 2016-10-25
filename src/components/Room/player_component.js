@@ -16,22 +16,22 @@ class Player extends React.Component {
 			url: '/api/deletePlayer',
 			data: {
 				name: this.props.name,
-				token: this.props.gameToken
-			}
+				token: this.props.gameToken,
+			},
 		})
 		.then(function (resp) {
-			console.log('i deleted the player, the resp is:',resp);
+			console.log('i deleted the player, the resp is:', resp);
 			console.log('i have the right function!', self.props.getTeam);
 			console.log('i called add queued player!');
 			self.props.getTeam();
 		})
 		.catch(function (err) {
-			console.log('i failed in deleteing the player',err);
+			console.log('i failed in deleteing the player', err);
 		});
 	}
 
 	render () {
-	return (
+		return (
 		  <div>
 		  	<li> 
 		  		<div className="text-center container">
