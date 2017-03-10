@@ -3,7 +3,7 @@ import React from 'react';
 import { Router, Route, browserHistory } from 'react-router';
 
 // Components
-import App from './components/App';
+import App from './components/app.js';
 import Home from './components/Home/home_component.js';
 import Create from './components/Create/create_component.js';
 import Share from './components/Share/share_component.js';
