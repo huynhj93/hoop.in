@@ -6,6 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon server/index.js --history-api-fallback",
+    "heroku-postbuild": "webpack -p --config ./webpack.config.js --progress",
     "bundle": "node_modules/.bin/webpack -w"
   },
   "keywords": [],
