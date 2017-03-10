@@ -21,7 +21,7 @@ class Share extends Component {
     return (
       <div className='text-center'>
         <section><h1>Share Game</h1></section>
-        <div>{`http://localhost:3000/join?token=${this.state.token}`}</div>
+        <div>{`https://teamhoopin.herokuapp.com/join?token=${this.state.token}`}</div>
         <div>
           <button><Link to={`room/${this.state.token}`} >create</Link></button>
           <button><Link to='/create' >back</Link></button>
